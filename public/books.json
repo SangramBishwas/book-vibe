@@ -1,0 +1,82 @@
+[
+    {
+      "id": 1,
+      "name": "The Psychology of Money",
+      "author": "F. Scott Fitzgerald",
+      "image": "https://i.ibb.co/hFtDQbQ/morgan-housel-a-Z-Mm-Sm-Acjg-unsplash.jpg",
+      "review": "A timeless classic depicting the roaring twenties with its glamour, excess, and disillusionment.",
+      "totalPages": 180,
+      "rating": 4.5,
+      "category": "Fiction",
+      "tags": ["classic", "novel", "1920s"],
+      "publisher": "Scribner",
+      "yearOfPublishing": 1925
+    },
+    {
+      "id": 2,
+      "name": "How Inovations Works",
+      "author": "George Orwell",
+      "image": "https://i.ibb.co/sVSZBcV/matt-ridley-H-LIL57-PHCc-unsplash.jpg",
+      "review": "A dystopian masterpiece that explores themes of totalitarianism, surveillance, and individual freedom.",
+      "totalPages": 328,
+      "rating": 4.7,
+      "category": "Fiction",
+      "tags": ["dystopian", "political", "surveillance"],
+      "publisher": "Secker & Warburg",
+      "yearOfPublishing": 1949
+    },
+     {
+      "id": 3,
+      "name": "A Story Telling Work Book for Beginners",
+      "author": "Jane Austen",
+      "image": "https://i.ibb.co/vc8wcL2/rain-bennett-7-Nir5-XIRVM-unsplash.jpg",
+      "review": "A classic romance novel exploring themes of social status, manners, and love in Georgian England.",
+      "totalPages": 279,
+      "rating": 4.9,
+      "category": "Fiction",
+      "tags": ["romance", "Georgian England", "social satire"],
+      "publisher": "T. Egerton, Whitehall",
+      "yearOfPublishing": 1813
+    },
+    {
+      "id": 4,
+      "name": "The Power Of Postive Thinking",
+      "author": "Norman Vincent Pealee",
+      "image": "https://www.raptisrarebooks.com/wp-content/uploads/2022/03/rrb-133171.jpg",
+      "review": "A powerful portrayal of racial injustice and moral growth in the American South.",
+      "totalPages": 281,
+      "rating": 4.8,
+      "category": "Fiction",
+      "tags": ["racial injustice", "Southern literature", "coming-of-age"],
+      "publisher": "J. B. Lippincott & Co.",
+      "yearOfPublishing": 1960
+    },
+    {
+      "id": 5,
+      "name": "Inner Engineering",
+      "author": "Sadhguru",
+      "image": "https://images.pangobooks.com/images/1389b6a9-3607-4446-9122-33737c42e75f?width=800&quality=85&crop=1%3A1",
+      "review": "A yogis guide to joy. It's a famous book and nework time best seller as well. I love this book",
+      "totalPages": 224,
+      "rating": 4.3,
+      "category": "Non-fiction",
+      "tags": ["spritual", "adventure", "coming-of-age"],
+      "publisher": "Little, Brown and Company",
+      "yearOfPublishing": 1951
+    },
+    {
+      "id": 6,
+      "name": "The Richeast Man in Babylon",
+      "author": "George S. Clason",
+      "image": "https://miro.medium.com/v2/resize:fit:1400/1*bnxYxByAbmPtjSydFIWtsA.jpeg",
+      "review": "An enchanting tale of adventure, friendship, and heroism set in Tolkien's richly imagined world of Middle-earth.",
+      "totalPages": 310,
+      "rating": 4.6,
+      "category": "Non-fiction",
+      "tags": ["adventure", "Middle-earth", "fantasy"],
+      "publisher": "George Allen & Unwin",
+      "yearOfPublishing": 1937
+    }
+   
+  ]
+  
