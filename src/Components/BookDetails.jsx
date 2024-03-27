@@ -1,14 +1,23 @@
 import { useLoaderData, useParams } from "react-router-dom";
+import { removedWishlist, savedReadBooks, savedWishlist } from "../utility/localStorage";
 
 const BookDetails = () => {
     const books = useLoaderData();
-    const { id } = useParams()
-    const idInt = parseInt(id);
+    const { ids } = useParams()
+    const idInt = parseInt(ids);
     const book = books.find((item) => item.id === idInt);
     const { name, image, author, category, review, rating, totalPages, yearOfPublishing, publisher, tags } = book;
+    const handleReadBooks = (book) => {
+        savedReadBooks(book.id);
+        removedWishlist(book.id)
+    }
+    const handleWishlist = () => {
+        savedWishlist(idInt);
+    }
+
     return (
         <div>
-            <div className="hero h-3/4 bg-base-200 mt-12">
+            <div className="hero h-3/4 bg-base-200 mt-9 rounded-xl">
                 <div className="hero-content items-center flex-col lg:flex-row">
                     <div className="h-full">
                         <img src={image} className="max-w-sm h-full rounded-lg shadow-2xl " />
@@ -19,7 +28,7 @@ const BookDetails = () => {
                             <p className="font-bold">By: {author}</p>
                         </div>
                         <div className="border-y-2 p-2 mt-3">
-                            <h3 className="font-semibold">{category}</h3>
+                            <h3 className="font-semibold text-xl">{category}</h3>
                         </div>
                         <p className="py-5"><span className="font-bold"> Review: </span> {review}</p>
                         <div className="pb-5 border-b-2 p-5">
@@ -43,8 +52,12 @@ const BookDetails = () => {
                             <span className="font-bold">{rating}</span>
                         </div>
                         <div className="flex gap-5">
-                        <button className="btn bg-transparent border-2 border-[#1313134D] text-xl">Read</button>
-                        <button className="btn bg-[#50B1C9] font-semibold] font-semibold text-xl">Wishlist</button>
+                            <button
+                                onClick={() => handleReadBooks(book)}
+                                className="btn bg-transparent border-2 border-[#1313134D] text-xl">Read</button>
+                            <button
+                                onClick={handleWishlist}
+                                className="btn bg-[#50B1C9] font-semibold] font-semibold text-xl">Wishlist</button>
                         </div>
                     </div>
                 </div>
