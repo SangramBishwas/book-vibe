@@ -15,6 +15,7 @@ import BookDetails from './Components/BookDetails';
 import Read from './Components/Read';
 import Wishlist from './Components/Wishlist';
 import About from './Components/about';
+import Faq from './Components/Faq';
 
 
 const router = createBrowserRouter([
@@ -55,6 +56,10 @@ const router = createBrowserRouter([
       {
         path: '/about&us',
         element: <About />
+      },
+      {
+        path: '/faq',
+        element: <Faq />
       }
     ]
   },
