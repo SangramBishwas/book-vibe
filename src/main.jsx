@@ -16,12 +16,14 @@ import Read from './Components/Read';
 import Wishlist from './Components/Wishlist';
 import About from './Components/about';
 import Faq from './Components/Faq';
+import Error from './Components/Error';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement: <Error />,
     children: [
       {
         path: '/',

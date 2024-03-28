@@ -2,11 +2,11 @@ const Faq = () => {
     return (
         <div className="my-10 space-y-2">
             <div className="flex justify-center items-center py-6 bg-base-200 my-6 rounded-xl">
-                <h1 className="font-bold text-3xl">Frequently Asked Questions</h1>
+                <h1 className="font-bold text-xl lg:text-3xl">Frequently Asked Questions</h1>
             </div>
             <div className="collapse collapse-plus bg-base-200 hover:bg-base-300">
                 <input type="radio" name="my-accordion-3" />
-                <div className="collapse-title text-2xl font-medium">
+                <div className="collapse-title text-xl lg:text-2xl font-medium">
                 How do I place an order on your online bookshop?
                 </div>
                 <div className="collapse-content">
@@ -15,7 +15,7 @@ const Faq = () => {
             </div>
             <div className="collapse collapse-plus bg-base-200 hover:bg-base-300">
                 <input type="radio" name="my-accordion-3" />
-                <div className="collapse-title text-2xl font-medium">
+                <div className="collapse-title text-xl lg:text-2xl font-medium">
                 What payment methods do you accept?
                 </div>
                 <div className="collapse-content">
@@ -24,7 +24,7 @@ const Faq = () => {
             </div>
             <div className="collapse collapse-plus bg-base-200 hover:bg-base-300">
                 <input type="radio" name="my-accordion-3" />
-                <div className="collapse-title text-2xl font-medium">
+                <div className="collapse-title text-xl lg:text-2xl font-medium">
                 How long will it take to receive my order?
                 </div>
                 <div className="collapse-content">
@@ -33,7 +33,7 @@ const Faq = () => {
             </div>
             <div className="collapse collapse-plus bg-base-200 hover:bg-base-300">
                 <input type="radio" name="my-accordion-3" />
-                <div className="collapse-title text-2xl font-medium">
+                <div className="collapse-title text-xl lg:text-2xl font-medium">
                 Do you offer gift wrapping or gift cards for purchases?
                 </div>
                 <div className="collapse-content">
@@ -42,7 +42,7 @@ const Faq = () => {
             </div>
             <div className="collapse collapse-plus bg-base-200 hover:bg-base-300">
                 <input type="radio" name="my-accordion-3" />
-                <div className="collapse-title text-2xl font-medium">
+                <div className="collapse-title text-xl lg:text-2xl font-medium">
                     Click to open this one and close others
                 </div>
                 <div className="collapse-content">
