@@ -1,4 +1,7 @@
 import PropTypes from 'prop-types';
+import { GrLocation } from "react-icons/gr";
+import { GoPeople } from "react-icons/go";
+import { HiOutlineDocumentChartBar } from "react-icons/hi2";
 const List = ({ list }) => {
     const {image, name, author, category, totalPages, publisher, yearOfPublishing, rating, tags} = list;
     return (
@@ -12,12 +15,12 @@ const List = ({ list }) => {
                         <h4 className='font-bold'>Tag</h4>
                         <button className='btn text-[#23BE0A] bg-[#FFAC3326]'>#{tags[0]}</button>
                         <button className='btn text-[#23BE0A] bg-[#FFAC3326]'>#{tags[1]}</button>
-                        <p>Year Of Publishing: {yearOfPublishing}</p>
+                        <p className='flex items-center gap-2'><GrLocation className='text-lg' /> <span>Year Of Publishing: {yearOfPublishing}</span></p>
                     </div>
                     <div className='flex mb-4 items-center w-1/2'>
-                        <p className='font-semibold text-[#13131399]
-                        '>Publisher: {publisher}</p>
-                        <p className='font-semibold text-[#13131399] '>Pages: {totalPages}</p>
+                    <p className='flex items-center gap-2'><GoPeople className='text-lg' /> <span className='font-semibold text-[#13131399]
+                        '>Publisher: {publisher}</span></p>
+                        <p className='flex items-center gap-2'><HiOutlineDocumentChartBar className='text-lg' /><span className='font-semibold text-[#13131399] '>Pages: {totalPages}</span></p>
                     </div>
                     <div className='flex gap-5 mb-4 items-center'>
                         <button className='btn bg-[#328EFF26]'>Category: {category}</button>
