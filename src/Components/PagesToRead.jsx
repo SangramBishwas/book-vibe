@@ -39,6 +39,8 @@ const PagesToRead = () => {
       
         return <path d={getPath(x, y, width, height)} stroke="none" fill={fill} />;
       };
+      
+
     return (
         <div className="my-16 ">
             <div>
@@ -46,10 +48,10 @@ const PagesToRead = () => {
             </div>
             <div className="flex justify-center">
                 <BarChart width={1200} height={500} data={readedBooks}>
-                    <Bar dataKey="totalPage" fill="#8884d8" shape={<TriangleBar />}/>
+                    <Tooltip />
+                    <Bar dataKey="totalPage" fill="#0085F6" shape={<TriangleBar />} label={{ position: 'top' }}/>
                     <XAxis dataKey="name"></XAxis>
                     <YAxis></YAxis>
-                    <Tooltip></Tooltip>
                 </BarChart>
             </div>
 
