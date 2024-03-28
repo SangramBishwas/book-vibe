@@ -12,6 +12,9 @@ const Header = () => {
         <li>
             <NavLink to='/pages&to&reload'>Pages to read</NavLink>
         </li>
+        <li>
+            <NavLink to='/about&us'>About Us</NavLink>
+        </li>
     </>
     return (
         <div className="navbar bg-base-100">
