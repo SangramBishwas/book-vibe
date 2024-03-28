@@ -1,5 +1,5 @@
 import { useLoaderData, useParams } from "react-router-dom";
-import { removedWishlist, savedReadBooks, savedWishlist } from "../utility/localStorage";
+import { getStoredReadBook, removedWishlist, savedReadBooks, savedWishlist } from "../utility/localStorage";
 
 const BookDetails = () => {
     const books = useLoaderData();
@@ -7,12 +7,21 @@ const BookDetails = () => {
     const idInt = parseInt(ids);
     const book = books.find((item) => item.id === idInt);
     const { name, image, author, category, review, rating, totalPages, yearOfPublishing, publisher, tags } = book;
+
     const handleReadBooks = (book) => {
         savedReadBooks(book.id);
         removedWishlist(book.id)
     }
-    const handleWishlist = () => {
-        savedWishlist(idInt);
+    const handleWishlist = (book) => {
+        console.log(book.id)
+        const storedBookId = getStoredReadBook();
+        for (const id of storedBookId) {
+            if(book.id !== id){
+                savedWishlist(book.id)
+            }
+        }
+
+
     }
 
     return (
@@ -56,7 +65,7 @@ const BookDetails = () => {
                                 onClick={() => handleReadBooks(book)}
                                 className="btn bg-transparent border-2 border-[#1313134D] text-xl">Read</button>
                             <button
-                                onClick={handleWishlist}
+                                onClick={() => handleWishlist(book)}
                                 className="btn bg-[#50B1C9] font-semibold] font-semibold text-xl">Wishlist</button>
                         </div>
                     </div>
