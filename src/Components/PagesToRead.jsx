@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import { getStoredReadBook } from "../utility/localStorage";
-import { BarChart, Bar, XAxis, YAxis, Tooltip } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 
 const PagesToRead = () => {
     const books = useLoaderData()
@@ -42,11 +42,8 @@ const PagesToRead = () => {
       
 
     return (
-        <div className="my-16 ">
-            <div>
-                <h2>Pages to read</h2>
-            </div>
-            <div className="flex justify-center">
+        <div className="my-5 lg:my-16">
+            <div className="flex lg:justify-center">
                 <BarChart width={1200} height={500} data={readedBooks}>
                     <Tooltip />
                     <Bar dataKey="totalPage" fill="#0085F6" shape={<TriangleBar />} label={{ position: 'top' }}/>

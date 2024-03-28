@@ -26,10 +26,10 @@ const BookDetails = () => {
 
     return (
         <div>
-            <div className="hero h-3/4 bg-base-200 mt-9 rounded-xl">
+            <div className="hero h-3/4 bg-base-200 my-10 rounded-xl">
                 <div className="hero-content items-center flex-col lg:flex-row">
                     <div className="h-full">
-                        <img src={image} className="max-w-sm h-full rounded-lg shadow-2xl " />
+                        <img src={image} className="lg:max-w-sm h-full rounded-lg shadow-2xl " />
                     </div>
                     <div>
                         <div className="space-y-3">
